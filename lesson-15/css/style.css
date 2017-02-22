@@ -430,6 +430,26 @@ i.fa-camera-retro {
   height: 100px;
   text-align: center;
   background-color: #fbfbfb;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.services-list-item:hover {
+  box-shadow: 0px 0px 35px 0px rgba(255, 110, 0, 0.9);
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+.services-list .rotate-item:hover {
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
 }
 .services-info h4 {
   font-size: 30px;
@@ -459,6 +479,9 @@ i.fa-camera-retro {
   font-size: 16px;
   -webkit-box-shadow: 0px 0px 57px 0px rgba(20, 20, 21, 0.2);
   box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.09);
+}
+.services-btn:hover {
+  box-shadow: 0px 0px 35px 0px rgba(255, 110, 0, 0.9);
 }
 .panel-default > .panel-heading h4 {
   color: #fc6744;
