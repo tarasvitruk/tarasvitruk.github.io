@@ -606,11 +606,11 @@ i.fa-camera-retro {
 	width: 250px;
 }
 #layer-1 {
-	margin-left: 60%;
+	margin-left: 30%;
 	margin-top: 1%;
 }
 #layer-2 {
-	margin-left: 80%;
+	margin-left: 50%;
 	margin-top: 15%;
 }
 #layer-3 {
@@ -901,6 +901,9 @@ Modal Window
 /* ------------- Adaptive --------------- */
 
 @media (min-width: 100px) and (max-width: 480px) {
+	header {
+		 min-height: 780px; 
+}
 	.video-container {
 		display: none;
 	}
@@ -965,9 +968,15 @@ Modal Window
 		-o-transform: translateX(-165px);
 		transform: translateX(-165px);
 	}
+	.layer img {
+		width: 100px;
+	}
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
+	header {
+		min-height: 780px; 
+	}
 	.video-container {
 		display: none;
 	}
@@ -1015,6 +1024,9 @@ Modal Window
 		-ms-transform: translateX(-165px);
 		-o-transform: translateX(-165px);
 		transform: translateX(-165px);
+	}
+	.layer img {
+		width: 150px;
 	}
 }
 
