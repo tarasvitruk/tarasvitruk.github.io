@@ -439,7 +439,7 @@ i.fa-camera-retro {
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
 }
-.hover-bg:hover {
+.hover-bg:hover, .hover-bg:focus {
   opacity: 1;
   filter: alpha(opacity=100);
 }
@@ -466,6 +466,13 @@ i.fa-camera-retro {
   -ms-transform: scale(1);
   transform: scale(1);
 }
+.hovereffect:focus .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
 
 .hovereffect img {
 	width: 100%;
@@ -476,6 +483,11 @@ i.fa-camera-retro {
 }
 
 .hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.2);
+  -webkit-filter: brightness(0.2);
+}
+.hovereffect:focus img {
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
   filter: brightness(0.2);
   -webkit-filter: brightness(0.2);
@@ -516,6 +528,12 @@ i.fa-camera-retro {
 }
 
 .hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.hovereffect:focus a, .hovereffect:focus p, .hovereffect:focus h2 {
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-transform: translate3d(0,0,0);
