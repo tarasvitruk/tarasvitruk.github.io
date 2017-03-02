@@ -395,6 +395,29 @@
       </div>
     </div>
   </section>
+  
+<!-- ------------------------------ parallax -------------------------------- -->
+
+    <section id="parallax">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 section-header text-center">
+            <h2><span>Parallax</span>section</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, provident ab eum!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <ul id="scene">
+              <li class="layer" id="layer-1" data-depth="0.50"><img src="img/parallax/1.png"></li>
+              <li class="layer" id="layer-2" data-depth="1.20"><img src="img/parallax/2.png"></li>
+              <li class="layer" id="layer-3" data-depth="2.40"><img src="img/parallax/3.png"></li>
+              <li class="layer" id="layer-4" data-depth="3.60"><img src="img/parallax/4.png"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
 <!-- ------------------------------ clients -------------------------------- -->
 
@@ -629,6 +652,7 @@
     <script src="js/snap.svg-min.js"></script>
     <script src="js/main.js"></script> <!-- Resource jQuery -->
     <script src="js/wow.min.js"></script>
+    <script src="js/jquery.parallax.js"></script>
 
     <!-- -------------------------- Img effect ---------------------------- -->
 
@@ -810,6 +834,12 @@
 
         });
     }
+    </script>
+
+    <!-- ------------------------------ parallax -------------------------------- -->
+
+    <script>
+      $('#scene').parallax();
     </script>
 
   </body>

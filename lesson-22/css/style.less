@@ -54,10 +54,10 @@ section {
 
 header {
 	position: relative;
-	background: @bg-grey url(../img/main-bg.jpg) no-repeat center;
+	background: @bg-grey url(../video-bg/Snapshots/Noted.jpg) no-repeat center;
 	background-size: cover;
-	min-height: 890px;
-	height: 100vh;
+	 min-height: 700px; 
+	 height: 100vh;  
 }
 .main {
 	&-head {
@@ -66,13 +66,13 @@ header {
 	&-logo-border {
 		width: 155px;
 		height: 55px;
-		border: 3px solid @base-black;
+		border: 3px solid @white;
 		text-align: center;
 		line-height: 49px;
 		p {
 			.opn-bold;
 			font-size: 36px;
-			color: @base-black;
+			color: @white;
 			span {
 				color: lighten(@base-red, 5%);
 			}
@@ -85,9 +85,10 @@ header {
 		height: 55px;
 	}
 	&-text {
-		margin-top: 12%;
+		margin-top: 3%;
 		text-align: center;
 		h1 {
+			color: @white;
 			font-size: 50px;
 			.opn-bold;
 			span {
@@ -95,12 +96,13 @@ header {
 			}
 		}
 		p {
+			color: @white;
 			padding-left: 20px;
 			padding-right: 20px;
 		}
 	}
 	&-form {
-		margin-top: 32%;
+		margin-top: 10%;
 		padding: 35px;
 		background-color: @white;
 		-webkit-box-shadow: 0px 0px 57px 0px rgba(20, 20, 21, 0.2);
@@ -142,7 +144,7 @@ header {
 		input, textarea {
 			width: 100%;
 			border: none;
-			border-bottom: 1px solid @base-black;
+			border-bottom: 1px solid @white;
 			margin-top: 30px;
 			font-size: 15px;
 		}
@@ -153,7 +155,7 @@ header {
 	display: block;
 	width: 34px;
 	height: 4px;
-	background-color: @base-black;
+	background-color: @white;
 	position: absolute;
 	right: 0;
 	top: 50%;
@@ -167,7 +169,7 @@ header {
 	-o-border-radius: 1.5px;
 	border-radius: 1.5px;
 		&:before, &:after {
-			background-color: @base-black;
+			background-color: @white;
 			display: inline-block;
 			content: '';
 			width: 34px;
@@ -598,6 +600,28 @@ i.fa-camera-retro {
 	}
 }
 
+/*-- ------------------------------ parallax -------------------------------- --*/
+
+.layer img {
+	width: 250px;
+}
+#layer-1 {
+	margin-left: 60%;
+	margin-top: 1%;
+}
+#layer-2 {
+	margin-left: 80%;
+	margin-top: 15%;
+}
+#layer-3 {
+	margin-left: 30%;
+	margin-top: 10%;
+}
+#layer-4 {
+	margin-left: 15%;
+	margin-top: 2%;
+}
+
 /*-- ------------------------------ clients -------------------------------- --*/
 .clients {
 	&-box {
@@ -877,6 +901,9 @@ Modal Window
 /* ------------- Adaptive --------------- */
 
 @media (min-width: 100px) and (max-width: 480px) {
+	.video-container {
+		display: none;
+	}
 	.main {
 		&-text {
 			h1 {
@@ -941,6 +968,9 @@ Modal Window
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
+	.video-container {
+		display: none;
+	}
 	.process-box {
 		margin-top: 75px;
 	}
@@ -989,6 +1019,9 @@ Modal Window
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+	.video-container {
+		display: none;
+	}
 	.process-box {
 		margin-top: 75px;
 	}
@@ -999,6 +1032,9 @@ Modal Window
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+	.video-container {
+		display: none;
+	}
 		
 }
 
